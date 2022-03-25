@@ -6,6 +6,11 @@ import "./Main.css";
 
 const Main = () => {
   const [cards, setCards] = useState([]);
+  const [itemInfo, setItemInfo] = useState([]);
+  const addToCart = (itemsData) => {
+    const newItems = [...itemInfo, itemsData];
+    setItemInfo(newItems);
+  };
   useEffect(() => {
     fetch("items.json")
       .then((res) => res.json())
@@ -21,11 +26,12 @@ const Main = () => {
               img={card.image}
               name={card.name}
               price={card.price}
+              addToCart={addToCart}
             ></Card>
           ))}
         </div>
         <div className="main-right">
-          <ItemsInfo></ItemsInfo>
+          <ItemsInfo itemInfo={itemInfo}></ItemsInfo>
         </div>
       </div>
     </div>

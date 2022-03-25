@@ -1,13 +1,20 @@
 import React from "react";
 import "./ItemsInfo.css";
 
-const ItemsInfo = () => {
+const ItemsInfo = (props) => {
+  const { itemInfo } = props;
+  let img = "";
+  let name = "";
+  for (const item of itemInfo) {
+    img = item.img;
+    name = item.name;
+  }
   return (
     <div className="info">
       <h2 className="info-title">Selected Items</h2>
       <div className="items">
-        <img src="https://picsum.photos/id/237/200/300" alt=""></img>
-        <p className="item-name">Name</p>
+        <img src={img} alt=""></img>
+        <p className="item-name">{name}</p>
         <button className="del-item">X</button>
       </div>
       <div className="items-btn-set">
