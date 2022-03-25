@@ -3,8 +3,7 @@
   grid-template-columns: 2fr 1fr;
 }
 .main-left {
-  background-color: cyan;
 }
 .main-right {
-  background-color: coral;
+  background-color: beige;
 }

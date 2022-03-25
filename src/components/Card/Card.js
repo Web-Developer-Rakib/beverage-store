@@ -10,7 +10,7 @@ const Card = () => {
         </div>
         <div className="card-info">
           <h2>Name: Pepsi</h2>
-          <h3>5$</h3>
+          <h3>Price: 5$</h3>
           <button className="add-to-cart-btn">ADD TO CART</button>
         </div>
       </div>

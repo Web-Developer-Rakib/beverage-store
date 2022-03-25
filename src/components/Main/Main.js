@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../Card/Card";
+import ItemsInfo from "../ItemsInfo/ItemsInfo";
 import "./Main.css";
 
 const Main = () => {
@@ -9,7 +10,9 @@ const Main = () => {
         <div className="main-left">
           <Card></Card>
         </div>
-        <div className="main-right">Right</div>
+        <div className="main-right">
+          <ItemsInfo></ItemsInfo>
+        </div>
       </div>
     </div>
   );

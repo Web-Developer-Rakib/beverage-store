@@ -1,5 +1,5 @@
 .card {
-  height: 350px;
+  height: 550px;
   width: 250px;
   border: 2px solid black;
   border-radius: 8px;
@@ -12,6 +12,7 @@
 }
 .card-img > img {
   border-radius: 8px;
+  width: 250px;
 }
 .card-info {
   margin: 10px;
