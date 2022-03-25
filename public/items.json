@@ -2,55 +2,55 @@
   {
     "id": 1,
     "name": "7 UP",
-    "image": "../src/images/7-up.jpeg",
+    "image": "./images/7-up.jpeg",
     "price": 3
   },
   {
     "id": 2,
     "name": "Coca Cola",
-    "image": "../src/images/coca-cola.jpg",
+    "image": "./images/coca-cola.jpg",
     "price": 5
   },
   {
     "id": 3,
     "name": "DR Pepper",
-    "image": "../src/images/dr-pepper.jfif",
+    "image": "./images/dr-pepper.jfif",
     "price": 7
   },
   {
     "id": 4,
     "name": "Fanta",
-    "image": "../src/images/fanta.jpg",
+    "image": "./images/fanta.jpg",
     "price": 3
   },
   {
     "id": 5,
     "name": "Monster-Energy",
-    "image": "../src/images/monster-energy.jpg",
+    "image": "./images/monster-energy.jpg",
     "price": 6
   },
   {
     "id": 6,
     "name": "Mountain Dew",
-    "image": "../src/images/mountain-dew.jpg",
+    "image": "./images/mountain-dew.jpg",
     "price": 2
   },
   {
     "id": 7,
     "name": "Pepsi",
-    "image": "../src/images/pepsi.jpeg",
+    "image": "./images/pepsi.jpeg",
     "price": 5
   },
   {
     "id": 8,
     "name": "Red Bull",
-    "image": "../src/images/red-bull.jpg",
+    "image": "./images/red-bull.jpg",
     "price": 9
   },
   {
     "id": 9,
     "name": "Sprite",
-    "image": "../src/images/sprite.jpg",
+    "image": "./images/sprite.jpg",
     "price": 4
   }
 ]

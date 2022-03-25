@@ -3,6 +3,10 @@
   grid-template-columns: 2fr 1fr;
 }
 .main-left {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-left: 20px;
 }
 .main-right {
   background-color: beige;
