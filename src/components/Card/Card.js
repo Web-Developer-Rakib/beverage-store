@@ -12,11 +12,7 @@ const Card = (props) => {
         <div className="card-info">
           <h2>Name: {name}</h2>
           <h3>Price: {price}$</h3>
-          <button
-            className="add-to-cart-btn"
-            onClick={() => addToCart(props)}
-            disabled={props.length === 4 ? true : false}
-          >
+          <button className="add-to-cart-btn" onClick={() => addToCart(props)}>
             <span>ADD TO CART</span>
             <span>
               <svg

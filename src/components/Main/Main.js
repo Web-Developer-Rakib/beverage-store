@@ -6,8 +6,9 @@ const Main = () => {
   const [cards, setCards] = useState([]);
   const [itemInfo, setItemInfo] = useState([]);
 
-  const addToCart = (itemsData, id) => {
+  const addToCart = (itemsData) => {
     let newItems = [...itemInfo, itemsData];
+
     setItemInfo(newItems);
   };
   useEffect(() => {
