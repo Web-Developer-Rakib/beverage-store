@@ -3,20 +3,16 @@ import "./ItemsInfo.css";
 
 const ItemsInfo = (props) => {
   const { itemInfo } = props;
-  let img = "";
-  let name = "";
-  for (const item of itemInfo) {
-    img = item.img;
-    name = item.name;
-  }
   return (
     <div className="info">
       <h2 className="info-title">Selected Items</h2>
-      <div className="items">
-        <img src={img} alt=""></img>
-        <p className="item-name">{name}</p>
-        <button className="del-item">X</button>
-      </div>
+      {itemInfo.map((item) => (
+        <div className="items">
+          <img src={item.img} alt=""></img>
+          <p className="item-name">{item.name}</p>
+          <button className="del-item">X</button>
+        </div>
+      ))}
       <div className="items-btn-set">
         <button className="item-btns random">Chose 1 Bottle</button>
         <button className="item-btns clear">Clear all</button>
