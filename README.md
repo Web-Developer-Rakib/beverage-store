@@ -1,3 +1,3 @@
 # Beverage store
 
-# [http://localhost:3000](http://localhost:3000)
+# [https://beverage-store-developed-by-rakib.netlify.app/](Live ste link)
