@@ -1,3 +1,3 @@
 # Beverage store
 
-# [https://beverage-store-developed-by-rakib.netlify.app/](Live ste link)
+# [https://beverage-store-developed-by-rakib.netlify.app/](https://beverage-store-developed-by-rakib.netlify.app/)
