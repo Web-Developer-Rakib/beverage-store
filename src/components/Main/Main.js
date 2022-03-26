@@ -8,8 +8,12 @@ const Main = () => {
 
   const addToCart = (itemsData) => {
     let newItems = [...itemInfo, itemsData];
-
     setItemInfo(newItems);
+  };
+  const chooseOne = (cartItemsData) => {
+    const chooseRandom =
+      cartItemsData[Math.floor(Math.random() * cartItemsData.length)];
+    setItemInfo(chooseRandom);
   };
   useEffect(() => {
     fetch("items.json")
