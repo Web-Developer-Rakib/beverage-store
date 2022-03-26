@@ -5,16 +5,11 @@ import "./Main.css";
 const Main = () => {
   const [cards, setCards] = useState([]);
   const [itemInfo, setItemInfo] = useState([]);
-
   const addToCart = (itemsData) => {
     let newItems = [...itemInfo, itemsData];
     setItemInfo(newItems);
   };
-  const chooseOne = (cartItemsData) => {
-    const chooseRandom =
-      cartItemsData[Math.floor(Math.random() * cartItemsData.length)];
-    setItemInfo(chooseRandom);
-  };
+
   useEffect(() => {
     fetch("items.json")
       .then((res) => res.json())
@@ -22,7 +17,7 @@ const Main = () => {
   }, []);
   return (
     <div>
-      <div className=" main-section">
+      <div className="main-section">
         <div className="main-left">
           {cards.map((card) => (
             <Card

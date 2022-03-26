@@ -2,7 +2,6 @@ import React from "react";
 import "./ItemsCart.css";
 const ItemsCart = (props) => {
   const { itemInfo } = props;
-
   return (
     <div className="info">
       <div>
