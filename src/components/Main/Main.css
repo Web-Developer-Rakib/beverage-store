@@ -11,3 +11,20 @@
 .main-right {
   background-color: beige;
 }
+@media only screen and (max-width: 600px) {
+  .main-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 1;
+  }
+  .main-right {
+    order: 0;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+}
