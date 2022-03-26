@@ -1,14 +1,13 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Card from "../Card/Card";
-import ItemsInfo from "../ItemsInfo/ItemsInfo";
+import ItemsCart from "../ItemsCart/ItemsCart";
 import "./Main.css";
-
 const Main = () => {
   const [cards, setCards] = useState([]);
   const [itemInfo, setItemInfo] = useState([]);
-  const addToCart = (itemsData) => {
-    const newItems = [...itemInfo, itemsData];
+
+  const addToCart = (itemsData, id) => {
+    let newItems = [...itemInfo, itemsData];
     setItemInfo(newItems);
   };
   useEffect(() => {
@@ -23,6 +22,7 @@ const Main = () => {
           {cards.map((card) => (
             <Card
               key={card.id}
+              id={card.id}
               img={card.image}
               name={card.name}
               price={card.price}
@@ -31,7 +31,7 @@ const Main = () => {
           ))}
         </div>
         <div className="main-right">
-          <ItemsInfo itemInfo={itemInfo}></ItemsInfo>
+          <ItemsCart itemInfo={itemInfo}></ItemsCart>
         </div>
       </div>
     </div>

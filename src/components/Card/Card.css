@@ -52,3 +52,7 @@
 .add-to-cart-btn:hover {
   background: #00bd68;
 }
+.cart-icon {
+  margin: -5px;
+  margin-left: 5px;
+}

@@ -6,10 +6,6 @@
 .info-title {
   text-align: center;
 }
-.item-name {
-  font-size: 30px;
-  font-weight: 600;
-}
 .items {
   display: flex;
   height: 40px;
@@ -26,6 +22,10 @@
   border-radius: 25px;
   padding: 0px 10px;
   margin-bottom: 40px;
+}
+.item-name {
+  font-size: 30px;
+  font-weight: 600;
 }
 
 .items > img {
@@ -89,6 +89,7 @@
 .random {
   background-image: linear-gradient(-180deg, #804fcf, #4e3c91);
 }
+
 .clear {
   background-image: linear-gradient(-180deg, #d70000, #bd0000);
 }
