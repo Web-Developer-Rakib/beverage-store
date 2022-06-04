@@ -31,7 +31,7 @@ const Main = () => {
           ))}
         </div>
         <div className="main-right">
-          <ItemsCart itemInfo={itemInfo}></ItemsCart>
+          <ItemsCart itemInfo={itemInfo} setItemInfo={setItemInfo}></ItemsCart>
         </div>
       </div>
     </div>

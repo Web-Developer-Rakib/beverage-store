@@ -1,7 +1,11 @@
 import React from "react";
 import "./ItemsCart.css";
 const ItemsCart = (props) => {
-  const { itemInfo } = props;
+  const { itemInfo, setItemInfo } = props;
+  const handleDeleteItem = (id) => {
+    const deletedItem = itemInfo.filter((item) => item.id !== id);
+    setItemInfo(deletedItem);
+  };
   return (
     <div className="info">
       <div>
@@ -12,7 +16,12 @@ const ItemsCart = (props) => {
           <div className="items" key={item.id}>
             <img src={item.img} alt=""></img>
             <p className="item-name">{item.name}</p>
-            <button className="del-item">X</button>
+            <button
+              onClick={() => handleDeleteItem(item.id)}
+              className="del-item"
+            >
+              X
+            </button>
           </div>
         ))}
         <div className="items-btn-set">
